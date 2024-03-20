@@ -34,8 +34,6 @@
 
 OpenAPI/Swagger 规范，JSON 模式文件，协议定义文件。
 
-有关示例，请参见 [`/api`](api/README.md) 目录。
-
 ## Web 应用程序目录
 
 ### `/web`
@@ -60,8 +58,6 @@ System init（systemd，upstart，sysv）和 process manager/supervisor（runit�
 
 执行各种构建、安装、分析等操作的脚本。
 
-这些脚本保持了根级别的 Makefile 变得小而简单(例如， [`https://github.com/hashicorp/terraform/blob/main/Makefile`](https://github.com/hashicorp/terraform/blob/main/Makefile) )。
-
 ### `/build`
 
 打包和持续集成。
@@ -78,15 +74,11 @@ IaaS、PaaS、系统和容器编排部署配置和模板(docker-compose、kubern
 
 额外的外部测试应用程序和测试数据。你可以随时根据需求构造 `/test` 目录。对于较大的项目，有一个数据子目录是有意义的。例如，你可以使用 `/test/data` 或 `/test/testdata` (如果你需要忽略目录中的内容)。请注意，Go 还会忽略以“.”或“_”开头的目录或文件，因此在如何命名测试数据目录方面有更大的灵活性。
 
-有关示例，请参见  [`/test`](test/README.md) 目录。
-
 ## 其他目录
 
 ### `/docs`
 
 设计和用户文档(除了 godoc 生成的文档之外)。
-
-有关示例，请参阅 [`/docs`](docs/README.md) 目录。
 
 ### `/tools`
 
@@ -95,8 +87,6 @@ IaaS、PaaS、系统和容器编排部署配置和模板(docker-compose、kubern
 ### `/examples`
 
 你的应用程序和/或公共库的示例。
-
-有关示例，请参见 [`/examples`](examples/README.md) 目录。
 
 ### `/third_party`
 
@@ -114,12 +104,8 @@ Git hooks。
 
 如果你不使用 Github 页面，则在这里放置项目的网站数据。
 
-有关示例，请参见 [`/website`](website/README.md) 目录。
-
 ## 你不应该拥有的目录
 
 ### `/src`
 
 有些 Go 项目确实有一个 `src` 文件夹，但这通常发生在开发人员有 Java 背景，在那里它是一种常见的模式。如果可以的话，尽量不要采用这种 Java 模式。你真的不希望你的 Go 代码或 Go 项目看起来像 Java:-)
-
-不要将项目级别 `src` 目录与 Go 用于其工作空间的 `src` 目录(如 [`How to Write Go Code`](https://golang.org/doc/code.html) 中所述)混淆。`$GOPATH` 环境变量指向你的(当前)工作空间(默认情况下，它指向非 windows 系统上的 `$HOME/go`)。这个工作空间包括顶层 `/pkg`, `/bin` 和 `/src` 目录。你的实际项目最终是 `/src` 下的一个子目录，因此，如果你的项目中有 `/src` 目录，那么项目路径将是这样的: `/some/path/to/workspace/src/your_project/src/your_code.go`。注意，在 Go 1.11 中，可以将项目放在 `GOPATH` 之外，但这并不意味着使用这种布局模式是一个好主意。

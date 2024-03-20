@@ -1,0 +1,9 @@
+*.md
+.git
+/assets
+/web
+/test
+*.log
+/examples
+/.idea
+/.DS_Store

@@ -1,0 +1,19 @@
+#Env: local
+#Name: gin-chat
+#DfsUrl: http://127.0.0.1:9050/group1/
+#Mode: debug      # debug, release, test
+#LogLevel: debug  # debug, info, warn, error, fatal
+#LogDir: ./logs/
+#JwtSecret:
+#JwtTimeout: 86400
+#Debug: true
+#
+#HTTP:
+#  Addr: :9050
+#  ReadTimeout: 5s
+#  WriteTimeout: 5s
+#
+#Websocket:
+#  Addr: :9060
+#  ReadTimeout: 5s
+#  WriteTimeout: 5s

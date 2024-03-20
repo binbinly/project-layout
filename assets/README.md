@@ -1,1 +1,1 @@
-# project-layout
+# assets

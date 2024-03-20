@@ -1,1 +1,5 @@
-package project_layout
+package main
+
+func main() {
+
+}
