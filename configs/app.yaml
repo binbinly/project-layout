@@ -1,5 +1,5 @@
 #Env: local
-#Name: gin-chat
+#Name: gin-app
 #DfsUrl: http://127.0.0.1:9050/group1/
 #Mode: debug      # debug, release, test
 #LogLevel: debug  # debug, info, warn, error, fatal
@@ -9,11 +9,11 @@
 #Debug: true
 #
 #HTTP:
-#  Addr: :9050
+#  Addr: :9100
 #  ReadTimeout: 5s
 #  WriteTimeout: 5s
 #
 #Websocket:
-#  Addr: :9060
+#  Addr: :9200
 #  ReadTimeout: 5s
 #  WriteTimeout: 5s
