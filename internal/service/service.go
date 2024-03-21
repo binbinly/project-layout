@@ -1,10 +1,10 @@
 package service
 
 import (
+	"github.com/binbinly/gin-pkg/app"
 	"github.com/binbinly/pkg/cache"
 	"github.com/binbinly/pkg/transport/ws"
 	"github.com/redis/go-redis/v9"
-	"project-layout/internal/app"
 	"project-layout/internal/repository"
 )
 

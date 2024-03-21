@@ -1,8 +1,8 @@
 package server
 
 import (
+	"github.com/binbinly/gin-pkg/app"
 	"github.com/binbinly/pkg/transport/http"
-	"project-layout/internal/app"
 )
 
 // NewHTTPServer http server

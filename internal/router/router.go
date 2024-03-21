@@ -2,10 +2,10 @@ package router
 
 import (
 	"net/http"
-	"project-layout/internal/app"
 
 	//_ "project-layout/docs"
 
+	"github.com/binbinly/gin-pkg/app"
 	"github.com/gin-contrib/pprof"
 	"github.com/gin-gonic/gin"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
